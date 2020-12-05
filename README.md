@@ -1,5 +1,7 @@
 # VarSAn - Variant Set Annotator
+
 Xiaoman Xie [xiaoman2@illinois.edu] and Saurabh Sinha
+
 University of Illinois Urbana-Champaign
 
 ## Table of Contents
