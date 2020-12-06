@@ -20,4 +20,14 @@ VarSAn uses a pre-built and configurable heterogeneous network whose nodes repre
  
 [Return to TOC](#table-of-contents)
 
+## Installation
+Please first clone this repository from Github: 
+```
+git clone
+```
+Please also download the edges in the network from: http://veda.cs.uiuc.edu/VarSAn/VarSAn_Data.zip The data directory should be unzipped and placed in the downloaded repository.
+
+## Tutorial
+
+
 
