@@ -43,8 +43,12 @@ Please put the created query file in the gene_sets folder as the sample query se
 ### Run VarSAn
 VarSAn should be called using the command:
 ```
-./
+./run_all.sh <snplist> <all> <pathway database> <gene-gene network> <weight> <number of random query set>
 ```
+| Argument | Description |Accepted Value|
+| -snplist | The file with query set variants ||
+| -sg |  ||
+| -pw | Pathway |Reactome/KEGG|
 
 
 
