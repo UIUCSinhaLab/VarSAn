@@ -8,6 +8,7 @@ University of Illinois Urbana-Champaign
 1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [Tutorial](#tutorial)
+4. Acknowledgments and credits
 
 
 ## Introduction
@@ -50,6 +51,16 @@ VarSAn should be called using the command:
 | -snplist | The file with query set variants ||
 | -sg |  ||
 | -pw | Pathway |Reactome/KEGG|
+
+## Acknowledgments and Credits
+Edges in the downloadable network include SNP-gene edges. 
+* For non-coding SNPs, these are based on SNP associations with genes revealed by eQTL analysis from the GTEx project: https://gtexportal.org/home/. We utilized publicly available eQTL data from https://storage.googleapis.com/gtex_analysis_v8/single_tissue_qtl_data/GTEx_Analysis_v8_eQTL.tar
+* For coding SNPs, edges are based on variants designated by PolyPhen 2.0 (PMID 20354512) as being "probably damaging" or "possibly damaging". These designations were obtained from the Ensembl database ensembldb.ensembl.org.
+
+Edges in the downloadable network include gene-pathway edges. These are based on pathway membership information according to the REACTOME database https://reactome.org/. 
+
+Edges in the downloadable network include gene-gene edges. These are based on protein-protein interactions according to the HumanNet database (https://www.inetbio.org/humannet/) and were obtained from https://knoweng.org/kn-overview/ 
+
 
 
 
