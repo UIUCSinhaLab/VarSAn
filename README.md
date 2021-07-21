@@ -8,7 +8,7 @@ University of Illinois Urbana-Champaign
 1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [Tutorial](#tutorial)
-4. [Acknowledgments and credits](#acknowledgments)
+4. [Acknowledgments and credits](#acknowledgments-and-credits)
 
 
 ## Introduction
