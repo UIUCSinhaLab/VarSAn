@@ -4,6 +4,8 @@ Xiaoman Xie [xiaoman2@illinois.edu] and Saurabh Sinha
 
 University of Illinois Urbana-Champaign
 
+VarSAn will be available at http://veda.cs.uiuc.edu/VarSAn/ as an online tool soon.
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Installation](#installation)
