@@ -50,11 +50,11 @@ VarSAn should be called using the command:
 ```
 | Argument| Description |Accepted Value|
 | :---:        |     :---:      |          :---: |
-| <snplist> | The filename of the file with query set variants. File extension should be excluded. For example, "SampleQuery" instead of "SampleQuery.txt" should be passed. |e.g. "Sample Query"|
-| <all>| Specify the tissue for tissue-specific mode or use "all" to run VarSAn in the pan-tissue mode.|all, tissue from the [list](TissueList.txt)|
-| <pathway database> | Pathway Database. Only Reactome pathways are supported in the Github version. |"Reactome"|
-|<weight>|If variants in the query set should be weighted according to the number of connections to control for linkage disequilibrium among non-coding SNPs.|"1" or "0"|
-|<number of random query set>|The number of random query sets used to provide a background distribution for the empirical p-value calculation. A higher empirical p-value resolution can be achieved by increasing the number of random query sets, but which would also require longer running time.|Any integer, we recommend to use numbers greater than 20.|
+| snplist | The filename of the file with query set variants. File extension should be excluded. For example, "SampleQuery" instead of "SampleQuery.txt" should be passed. |e.g. "Sample Query"|
+| all| Specify the tissue for tissue-specific mode or use "all" to run VarSAn in the pan-tissue mode.|all, tissue from the [list](TissueList.txt)|
+| pathway database | Pathway Database. Only Reactome pathways are supported in the Github version. |"Reactome"|
+|weight|If variants in the query set should be weighted according to the number of connections to control for linkage disequilibrium among non-coding SNPs.|"1" or "0"|
+|number of random query set|The number of random query sets used to provide a background distribution for the empirical p-value calculation. A higher empirical p-value resolution can be achieved by increasing the number of random query sets, but which would also require longer running time.|Any integer, we recommend to use numbers greater than 20.|
 
 A sample command could be:
 ```
