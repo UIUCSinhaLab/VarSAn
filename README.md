@@ -31,7 +31,7 @@ git clone https://github.com/UIUCSinhaLab/VarSAn.git
 Please also download the edges in the network from: http://veda.cs.uiuc.edu/VarSAn/VarSAn_Data.zip The data directory should be unzipped and placed in the downloaded repository. More information about files in the data folder can be found here: http://veda.cs.uiuc.edu/VarSAn/
 
 ## Tutorial
-This section of the README is meant to walk a user through a process of using VarSAn to find pathways that relate to a SNP set of interest. In these examples, we will examine a query set of 798 SNPs.
+This section of the README is meant to walk a user through the process of using VarSAn to find pathways that relate to a SNP set of interest. In these examples, we will examine a query set of 798 SNPs.
 
 ###  Creating SNP Query Set
 The first step is to create a file that includes the SNPs in the query set. This query set file format should list one SNP on each row with SNPs formatted as 'chromosome_location'. For example, the [sample query set file](gene_sets/dmel/5268_brain_primordium.names.txt) contains:
@@ -41,18 +41,25 @@ chr2_217098337
 chr2_217056046
 chr12_28021884
 ```
-Please put the created query file in the gene_sets folder as the sample query set file.
+Please put the query file in the gene_sets folder as the sample query set file.
 
 ### Run VarSAn
 VarSAn should be called using the command:
 ```
 ./run_all.sh <snplist> <all> <pathway database> <gene-gene network> <weight> <number of random query set>
 ```
-| Argument | Description |Accepted Value|
+| Argument| Description |Accepted Value|
 | :---:        |     :---:      |          :---: |
-| -snplist | The file with query set variants ||
-| -sg |  ||
-| -pw | Pathway |Reactome/KEGG|
+| <snplist> | The filename of the file with query set variants. File extension should be excluded. For example, "SampleQuery" instead of "SampleQuery.txt" should be passed. |e.g. "Sample Query"|
+| <all>| Specify the tissue for tissue-specific mode or use "all" to run VarSAn in the pan-tissue mode.|all, tissue from the [list](TissueList.txt)|
+| <pathway database> | Pathway Database. Only Reactome pathways are supported in the Github version. |"Reactome"|
+|<weight>|If variants in the query set should be weighted according to the number of connections to control for linkage disequilibrium among non-coding SNPs.|"1" or "0"|
+|<number of random query set>|The number of random query sets used to provide a background distribution for the empirical p-value calculation. A higher empirical p-value resolution can be achieved by increasing the number of random query sets, but which would also require longer running time.|Any integer, we recommend to use numbers greater than 20.|
+
+A sample command could be:
+```
+./run_all.sh SampleQuery Breast_Mammary_Tissue Reactome yes 1 10
+```
 
 ## Acknowledgments and Credits
 Edges in the downloadable network include SNP-gene edges. 
