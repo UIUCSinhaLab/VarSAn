@@ -28,7 +28,7 @@ Please first clone this repository from Github:
 ```
 git clone https://github.com/UIUCSinhaLab/VarSAn.git
 ```
-Please also download the edges in the network from: [data.zip] (https://drive.google.com/file/d/1au0Pt4xWyxsqHtWWCciS17pcY1srjoDz/view?usp=sharing) The data directory should be unzipped and placed in the downloaded repository.
+Please also download the edges in the network from: [data.zip](https://drive.google.com/file/d/1au0Pt4xWyxsqHtWWCciS17pcY1srjoDz/view?usp=sharing) The data directory should be unzipped and placed in the downloaded repository.
 
 ## Tutorial
 This section of the README is meant to walk a user through the process of using VarSAn to find pathways that relate to a SNP set of interest. In these examples, we will examine a query set of 798 SNPs.
