@@ -28,13 +28,13 @@ Please first clone this repository from Github:
 ```
 git clone https://github.com/UIUCSinhaLab/VarSAn.git
 ```
-Please also download the edges in the network from: https://drive.google.com/file/d/1au0Pt4xWyxsqHtWWCciS17pcY1srjoDz/view?usp=sharing The data directory should be unzipped and placed in the downloaded repository.
+Please also download the edges in the network from: [data.zip] (https://drive.google.com/file/d/1au0Pt4xWyxsqHtWWCciS17pcY1srjoDz/view?usp=sharing) The data directory should be unzipped and placed in the downloaded repository.
 
 ## Tutorial
 This section of the README is meant to walk a user through the process of using VarSAn to find pathways that relate to a SNP set of interest. In these examples, we will examine a query set of 798 SNPs.
 
 ###  Creating SNP Query Set
-The first step is to create a file that includes the SNPs in the query set. This query set file format should list one SNP on each row with SNPs formatted as 'chromosome_location'. For example, the [sample query set file](gene_sets/dmel/5268_brain_primordium.names.txt) contains:
+The first step is to create a file that includes the SNPs in the query set. This query set file format should list one SNP on each row with SNPs formatted as 'chromosome_location'. For example, the [sample query set file](gene_sets/SampleQuery.txt) contains:
 ```
 chr10_121589810
 chr2_217098337
