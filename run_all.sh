@@ -19,7 +19,7 @@ echo ${w}
 ./run_VarSAn.sh ${snplist} ${sg} ${pw} ${gg} ${w} 0 ${snplist}
 for i in $(seq 1 ${nq}); do ./sample_random_query.sh ${snplist} ${sg} ./gene_sets/${snplist}.RandomQuery-$i.txt ;./run_VarSAn.sh ${snplist}.RandomQuery-$i ${sg} ${pw} ${gg} ${w} 1 ${snplist}; done
 sleep 1
-paste ./results/${snplist}.node.*.1.rwr ./results/${snplist}.RandomQuery-*.1.rwr |awk '(NR>1){sum=0; for (i=2; i<=101; i++) {m=i+5; if($m >= $6) {sum++}} print $2"\t"$6"\t"sum/100}'|grep -v "^ENSG"|sort -g -k 3 -k 2rg >./results/${snplist}.query.empirical
+paste ./results/${snplist}.node.*.0.5.base ./results/${snplist}.node.*.1.rwr ./results/${snplist}.RandomQuery-*.1.rwr |awk -v nq=${nq} '(NR>1){sum=0; for (i=2; i<=101; i++) {m=i+5; if($m >= $6) {sum++}} print $2"\t"$6"\t"sum/nq}'|grep -v "^ENSG"|sort -g -k 3 -k 2rg >./results/${snplist}.query.empirical
 
 rm -rf ./scratch/
 
